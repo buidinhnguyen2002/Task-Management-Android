@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/invite_user"
+        android:title="Invite User" />
+    <item
+        android:id="@+id/create_task"
+        android:title="Create Task" />
+    <item
+        android:id="@+id/delete_workspace"
+        android:title="Delete Workspace" />
+    <item
+        android:id="@+id/rename_workspace"
+        android:title="Rename" />
+</menu>

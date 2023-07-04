@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_12ssp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name workspace" />
+    <EditText
+        android:id="@+id/name_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name workspace"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:background="@drawable/border_round_input"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_create_workspace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create workspace" />
+
+</LinearLayout>

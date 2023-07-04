@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/taskItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:contentPadding="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/userTaskTitle"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="fdgkjfdglkfdlkgfdlkdjgflgdwsadsdaddassddskj"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/deadlineDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_medium"
+            android:text="16/23/33"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/startingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:fontFamily="@font/inter_medium"
+            android:text="16/23/33"
+            android:textSize="@dimen/_10ssp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/priorityShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:checkable="false"
+            android:clickable="false"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:text="Medium"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:translationY="10dp"
+            app:chipMinHeight="25dp"
+            app:textEndPadding="3dp"
+            app:textStartPadding="4dp" />
+
+        <TextView
+            android:id="@+id/userTaskDescription"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:text="Ellipsis is triple dots (........................................................................................................"
+            android:textSize="@dimen/_11ssp" />
+
+
+        // Avartar chữ
+
+        <FrameLayout
+            android:id="@+id/text_assignee"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+            android:background="@drawable/circle_container"
+            android:translationY="-10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </FrameLayout>
+        // Avartar hình
+
+        <FrameLayout
+            android:id="@+id/avatar_assignee"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+            android:background="@drawable/circle_container"
+            android:clipChildren="true"
+            android:clipToPadding="false"
+            android:translationY="-10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/avatar_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_container"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/place_holder" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

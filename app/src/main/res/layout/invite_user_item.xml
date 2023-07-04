@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/userDetailSee"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="377dp"
+        android:layout_height="69dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/avatar_assignee"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_container"
+                    android:clipChildren="true"
+                    android:clipToPadding="false">
+
+                    <ImageView
+                        android:id="@+id/avatar_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_container"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/place_holder" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/label_user"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_container">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/text_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="257dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="TextView" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="35dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/invite_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="13.000dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

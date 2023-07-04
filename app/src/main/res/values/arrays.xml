@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items">
+        <item>ALL Tasks</item>
+        <item>TO-DO</item>
+        <item>IN PROGRESS</item>
+        <item>DONE</item>
+    </string-array>
+</resources>
